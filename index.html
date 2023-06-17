@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encuesta sobre IA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <h1 id="title">Encuesta sobre Inteligencia Artificial y Modelos de Lenguaje</h1>
+    <p id="description">Gracias por participar en esta encuesta sobre inteligencia artificial y modelos de lenguaje. Tu opinión es muy valiosa para nosotros. Por favor, completa el formulario a continuación:</p>
+  <div class="container">
+    <form id="survey-form" class="mb-6">
+      <div class="form-group">
+        <label for="name" id="name-label">Nombre:</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su nombre" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email" id="email-label">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="number" id="number-label">Edad:</label>
+        <input type="number" class="form-control" id="number" name="number" placeholder="Ingrese una edad" min="12" max="72" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="dropdown">¿Cuál es tu nivel de familiaridad con los modelos de lenguaje y la IA?:</label>
+        <select class="form-control" id="dropdown" name="dropdown">
+          <option value="opcion1">Totalmente familiarizado/a.</option>
+          <option value="opcion2">Algo familiarizado/a, pero no profundamente.</option>
+          <option value="opcion3">No estoy familiarizado/a en absoluto.</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>¿En qué áreas consideras que los modelos de lenguaje y la IA podrían tener un mayor impacto?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="prioridad1" name="prioridad" value="alta">
+          <label class="form-check-label" for="prioridad1">Salud y medicina.</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="prioridad2" name="prioridad" value="media">
+          <label class="form-check-label" for="prioridad2">Automatización y robótica.</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="prioridad3" name="prioridad" value="media">
+          <label class="form-check-label" for="prioridad2">Educación y aprendizaje.</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>¿Cuáles consideras que son las principales ventajas de los modelos de lenguaje como ChatGPT?</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="preferencia1" name="preferencia1" value="opcion1">
+          <label class="form-check-label" for="preferencia1">Mayor eficiencia y productividad en tareas de procesamiento de lenguaje.</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="preferencia2" name="preferencia2" value="opcion2">
+          <label class="form-check-label" for="preferencia2">Facilidad para obtener respuestas rápidas y precisas a preguntas específicas.</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="preferencia3" name="preferencia3" value="opcion3">
+          <label class="form-check-label" for="preferencia3">Mayor capacidad para entender y generar lenguaje natural de manera más natural y coherente.</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="comments">Comentarios adicionales:</label>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Escribe tus comentarios aquí"></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-secondary btn-lg btn-block" id="submit">Enviar</button>
+    </form>
+  </div>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
